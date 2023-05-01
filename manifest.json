@@ -1,15 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Tab Merger Splitter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Merge and split tabs using keyboard shortcuts",
   "action": {
     "default_icon": "icon.png"
   },
   "permissions": [
     "tabs",
-    "windows",
-    "scripting"
+    "windows"
   ],
   "commands": {
     "merge_tab": {
