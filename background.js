@@ -7,7 +7,11 @@ chrome.commands.onCommand.addListener(async (command) => {
     case 'merge_tab':
       if (windows.length > 1 && currentWindow.tabs.length === 1) {
         const otherWindow = windows.find((win) => win.id !== currentTab.windowId);
-        chrome.tabs.move(currentTab.id, { windowId: otherWindow.id, index: -1 });
+        const movedTab = await chrome.tabs.move(
+          currentTab.id,
+          { windowId: otherWindow.id, index: -1 },
+        );
+        chrome.tabs.update(movedTab.id, { active: true });
       }
       break;
 
