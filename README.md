@@ -6,7 +6,7 @@ There is no built-in keyboard shortcut to achieve this in Chrome or Edge, which 
 
 ## 1. Installation
 
-(To be published to the Chrome Web Store...)
+Please go the Chrome Web Store to install it: https://chrome.google.com/webstore/detail/tab-merger-splitter/fckkfigeieganclanlhcmmiakfcafmbe
 
 
 ## 2. How to use
